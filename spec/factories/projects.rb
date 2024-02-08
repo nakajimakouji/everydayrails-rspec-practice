@@ -21,8 +21,9 @@ FactoryBot.define do
       due_on { 1.day.from_now }
     end
 
+    # 無効になっている
     trait :invalid do
-      name { nil }
+      name{ nil }
     end
 
     # Factory inheritance examples ...
